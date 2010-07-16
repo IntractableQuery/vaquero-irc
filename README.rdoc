@@ -1,4 +1,4 @@
-==About
+== About
 Vaquero is an IRC library I wrote around the summer of 2007.  At the time
 it was (and even now, in 2010, I suspect it remains still) the most
 fully-featured IRC parser.  DCC support is probably the only thing lacking,
@@ -20,5 +20,9 @@ reads the IRC input stream... not quite optimal.  Also, I wouldn't consider
 it a stable library; it was still not quite finished when I stopped working
 on it, although the vast majority of necessary features are intact.
 
-==License
+== Todo
+* Add old website content here
+* Remove the subversion folders...
+
+== License
 You may assume that the code is provided under the GPLv3.
