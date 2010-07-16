@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/parser/events/server/numeric/error"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="ErroneousNicknameError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="7c23352f04f0fbbb4f64dc51d6ca5b0e"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="NicknameInUseError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="e53e8fdbdda40d210bbd141b98f8fa6b"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="UnavailableResourceError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="6db6902823572a4483deca9b0dcff8df"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="NoNicknameGivenError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="721d8add97bb5375982072683c62ce33"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="RestrictedNicknameError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="57400ece31176132da59ec3709772bad"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="AlreadyRegisteredError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="87c07ba684ecb528c5c636c6d3f84852"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="NicknameCollisionError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="45b4b6f0cfd83244a93d24b2332a2233"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="NeedMoreParametersError.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="2a044f72ea54cc217d9c3a221fd2d8e8"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCNumericErrorEvent.java"
+   text-time="2007-08-13T01:59:48.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="fed5eee91ea3a3503faea5ab80af97a6"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>

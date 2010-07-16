@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/util/modes/channel"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="7"
+   name="ChanInviteOnlyMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="61dcb6e1aea5bb58b352c38cf8eb671c"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanBanMode.java"
+   text-time="2007-08-16T21:28:13.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="7457e8f3febd9c1c3115df0e4e973729"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanNoExtMsgMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="3fa64bbef02cd7ed538a16c787965fad"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanModeratedMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="b059632eb13243fef085fd6f07c6a491"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanVoiceMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="785bb9a2f64c34657a2da083bcf954d7"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanPrivateMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="a594d551e29adac795b426e479aae001"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChannelMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="bb611e969a3f81a7adce2ce4e86be0cb"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanLimitMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="ce8698b861518925495915bb0cd46ed7"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChannelNicknameParameterMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="f96c582be085e0306c437fdcf533b638"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanSecretMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="cf820850886348535fdbba8a70773fd2"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanTopicLockMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="1d2251d452a1d57e46d8fe096ee7c432"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanKeyMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="b63668370198af166ab5f6f073318617"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChannelHostmaskParameterMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="4d279a644a7f7f53c0de2b0c04c23dd4"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChanOperatorMode.java"
+   text-time="2007-08-16T21:26:40.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="18e496d75b1973c44c7b365eefda51b8"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+<entry
+   committed-rev="7"
+   name="ChannelIntegerParameterMode.java"
+   text-time="2007-08-16T21:26:41.000000Z"
+   committed-date="2007-08-16T23:34:02.123639Z"
+   checksum="8bf37aa9b8935a97adac95420cfe36e4"
+   last-author="iron"
+   kind="file"
+   revision="7"/>
+</wc-entries>

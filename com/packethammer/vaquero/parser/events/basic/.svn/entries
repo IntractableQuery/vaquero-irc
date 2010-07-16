@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/parser/events/basic"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="IRCUnknownEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="6b56190c21a3ea032dbb488a6433e9dc"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCNoticeEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="fc7dfd04a1f84ef548daec49d7c2c70f"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCQuitEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="615976aa6c017769fd7e9f44e2fd68da"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCDccRequestEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="0798600b1f11819c4418739d66a96eaa"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCMessageEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="b0c7ac08b9d3295c5c617935eee3865c"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCCTCPEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="e2de6bb43903c6081341b35252470c8d"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCModeChangeEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="94c8a57c0a951cd9d3f1741945e13a54"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCNickChangeEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="88ad394ce1dece09e43e590a03dfd191"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCActionEvent.java"
+   text-time="2007-08-13T01:59:47.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="0d31365845d44ee3b77ebb7445a23016"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>

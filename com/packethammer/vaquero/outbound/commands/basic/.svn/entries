@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/outbound/commands/basic"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="IRCActionNickCommand.java"
+   text-time="2007-08-13T01:59:54.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="88798e34161c4b4fe5c648a7f4ecbeda"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCDCCSendCommand.java"
+   text-time="2007-08-13T01:59:55.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="15a2a8b978d81f72fa4a40d8bbf1d9a2"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCModeCommand.java"
+   text-time="2007-08-13T01:59:54.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="f48f8ab2d613693d7e08c131339b8f1f"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="8"
+   name="IRCNoticeNickCommand.java"
+   text-time="2007-08-17T18:08:06.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="2f740f25484fb0c5c9f28f014e3640d9"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="8"
+   name="IRCMessageNickCommand.java"
+   text-time="2007-08-17T18:08:06.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="372a0566b1d3b77a6ab0735fe60fde3d"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="MultitargetMessage.java"
+   text-time="2007-08-13T01:59:55.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="37805547dcf069de042dacf65253dbdd"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCDCCChatCommand.java"
+   text-time="2007-08-13T01:59:54.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="a9544c7dada17aeb9a13bc7640ae0fcd"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="6"
+   name="IRCRawCommand.java"
+   text-time="2007-08-15T02:56:49.000000Z"
+   committed-date="2007-08-15T03:00:55.274476Z"
+   checksum="8f83e81cb26b4ee25673e221f81918db"
+   last-author="iron"
+   kind="file"
+   revision="6"/>
+<entry
+   committed-rev="2"
+   name="IRCCTCPReplyNickCommand.java"
+   text-time="2007-08-13T01:59:54.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="6e4f908b5ec6e25da35c21e370f0bd51"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCWhoCommand.java"
+   text-time="2007-08-13T01:59:55.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="24fc419b790c3e78c5549cc5e8055f93"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCCTCPNickCommand.java"
+   text-time="2007-08-13T01:59:55.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="27807b0ab6c7e53825aecefa5915ff9f"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>

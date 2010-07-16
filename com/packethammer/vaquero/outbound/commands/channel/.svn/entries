@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/outbound/commands/channel"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="IRCChannelCTCPCommand.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="aa9034c5df484826592efe38a22ca682"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCNamesCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="5fd1f8b43377df407db016f28efcce63"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCPartCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="06f6be0a531a70c3d08c891954f4e0fe"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCChannelActionCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="74614943e6c4c2966413c5327935be1c"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCChannelNoticeCommand.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="8df147f0a65bb4353db7162356cea0be"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCListCommand.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="7f633a8804408e1ef0b83a1dcc5ae04a"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCChannelMessageCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="9ea477c713407adb142d0e7f679f413d"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCChannelModeCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="df0ca094418da2ae4b45ba4ce6d80bf2"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="IRCTopicCommand.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="65718a3771ff450aa631eae706e9ee36"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="8"
+   name="IRCInviteCommand.java"
+   text-time="2007-08-17T18:08:06.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="af8472dbc19975c78704784c16b68f7f"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="IRCJoinCommand.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="e99ee81011404f4d1ef5868a1c62f49c"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="ChannelKeyPair.java"
+   text-time="2007-08-13T01:59:53.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="72fe76108280d67cfd8ae65a37f61325"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="8"
+   name="IRCKickCommand.java"
+   text-time="2007-08-17T18:08:06.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="10c783c1ecb31c66106ecea52f9bd85d"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+</wc-entries>

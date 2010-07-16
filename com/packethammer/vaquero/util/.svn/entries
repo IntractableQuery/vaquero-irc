@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/util"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="MaskMatcher.java"
+   text-time="2007-08-13T02:00:03.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="54d885cde650502471ee39d9c118ed2b"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="CasemappingDefinition.java"
+   text-time="2007-08-13T02:00:01.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="0719899b48914047555c49c7bfe1021c"
+   last-author="iron"
+   kind="file"/>
+<entry
+   name="protocol"
+   kind="dir"/>
+<entry
+   name="irctext"
+   kind="dir"/>
+<entry
+   name="parserlisteners"
+   kind="dir"/>
+<entry
+   name="datastore"
+   kind="dir"/>
+<entry
+   name="eventsystem"
+   kind="dir"/>
+<entry
+   name="modes"
+   kind="dir"/>
+<entry
+   committed-rev="8"
+   name="Hostmask.java"
+   text-time="2007-08-17T18:58:40.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="2a6b436b489d079f780a9d386025dea4"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+<entry
+   committed-rev="2"
+   name="CasemappedString.java"
+   text-time="2007-08-13T02:00:01.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="3b0ad322b0c8b68f8aa39047aab28a28"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="8"
+   name="CommandHelper.java"
+   text-time="2007-08-17T18:57:53.000000Z"
+   committed-date="2007-08-17T20:59:03.340292Z"
+   checksum="6304b23301fad395660946856da83fbb"
+   last-author="iron"
+   kind="file"
+   revision="8"/>
+</wc-entries>

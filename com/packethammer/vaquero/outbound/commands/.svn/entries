@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/outbound/commands"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   name="extended"
+   kind="dir"/>
+<entry
+   name="basic"
+   kind="dir"/>
+<entry
+   name="interfaces"
+   kind="dir"/>
+<entry
+   name="server"
+   kind="dir"/>
+<entry
+   name="channel"
+   kind="dir"/>
+<entry
+   committed-rev="2"
+   name="IRCCommand.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="b753bf20f8254bcb0d361d852647c5db"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>

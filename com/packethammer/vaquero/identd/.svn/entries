@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/identd"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="AbstractIdentReply.java"
+   text-time="2007-08-13T07:34:58.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="100ef7e0b63ef8e0e5b14f9912a5cf54"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="ErrorReply.java"
+   text-time="2007-08-13T07:34:58.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="f3c8aad7eb733917ef2de0bbc57ed4db"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="SingleUserIdentDaemon.java"
+   text-time="2007-08-13T07:37:10.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="e9869d9693fd867d522a395330dfcd1c"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="UserReply.java"
+   text-time="2007-08-13T07:34:58.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="99b00e674681e24d8ef061158a746c73"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="AbstractIdentDaemon.java"
+   text-time="2007-08-13T07:34:58.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="43fb3505c18fe8c649f3215754e25e70"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>

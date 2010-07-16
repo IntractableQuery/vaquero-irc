@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wc-entries
+   xmlns="svn:">
+<entry
+   committed-rev="2"
+   name=""
+   committed-date="2007-08-14T20:54:44.973210Z"
+   url="svn://192.168.1.6/home/svn/vaquero/Vaquero/src/com/packethammer/vaquero/testing"
+   last-author="iron"
+   kind="dir"
+   repos="svn://192.168.1.6/home/svn/vaquero"
+   revision="4"/>
+<entry
+   committed-rev="2"
+   name="CommandWaitQueueTester.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="50567bb0865e3d6696458edf16f86572"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="MegaTesting.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="77b6daeada4e46678c5ea40a3dad2315"
+   last-author="iron"
+   kind="file"/>
+<entry
+   committed-rev="2"
+   name="ParserTest.java"
+   text-time="2007-08-13T01:59:52.000000Z"
+   committed-date="2007-08-14T20:54:44.973210Z"
+   checksum="3a1f0217bafd78bd4c6ac6804c4fbe79"
+   last-author="iron"
+   kind="file"/>
+</wc-entries>
