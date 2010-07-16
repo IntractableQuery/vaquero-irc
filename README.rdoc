@@ -23,7 +23,8 @@ on it, although the vast majority of necessary features are intact.
 == Todo
 * Add old website content here
 * Remove the subversion folders...
-* Check for newer comments in backups... these look old, especially in IRCParser
+* Check for newer comments in backups... these look old, especially in IRCParser (excessive worry about constant-time event lookups, heh)
+* Add a built library download
 
 == License
 You may assume that the code is provided under the GPLv3.
