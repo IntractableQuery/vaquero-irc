@@ -23,6 +23,7 @@ on it, although the vast majority of necessary features are intact.
 == Todo
 * Add old website content here
 * Remove the subversion folders...
+* Check for newer comments in backups... these look old, especially in IRCParser
 
 == License
 You may assume that the code is provided under the GPLv3.
