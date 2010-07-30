@@ -34,32 +34,32 @@ Vaquero is designed & maintained using Java 6. You can probably compile it to ve
 === Overview
 Vaquero in its most simple form is just the IRC parser and command sending components. Just these alone are quite powerful.
 
-    * Inbound IRC data is turned into object-oriented events, which you can listen for (if you're familiar with Swing, it's quite similar)
-    * All RFC1459 (the base IRC specification) events are supported, including a fairly large number of numeric events (there are literally hundreds of these in existence, so Vaquero tries to support most of the popular and important ones)
-    * Likewise, outbound IRC commands are also composed of command classes -- because of this, you can perform powerful inspection on commands you send out, dropping or modifying them if you wish
-    * Outbound command throttling can be performed using a variety of different throttling mechanisms, allowing you to prevent your IRC client from flooding a server and getting disconnected
-    * Because of the built-in filtering, you can configure the outbound command manager to automatically optimize the commands you send, such as splitting up excessive mode settings and substituting your regular commands with highly specialized commands available only on some IRC servers to increase the client's effeciency
-    * Full user-mode and channel-mode parsing is built in; modes are delivered to you the same as any other event
-    * Basic tracking faculties are in place to help you determine information about yourself and about the server you're on (like modes it supports)
-    * You can easily use any type of network socket you want with vaquero's basic IRC client class, meaning SSL support is practically already in place. 
+* Inbound IRC data is turned into object-oriented events, which you can listen for (if you're familiar with Swing, it's quite similar)
+* All RFC1459 (the base IRC specification) events are supported, including a fairly large number of numeric events (there are literally hundreds of these in existence, so Vaquero tries to support most of the popular and important ones)
+* Likewise, outbound IRC commands are also composed of command classes -- because of this, you can perform powerful inspection on commands you send out, dropping or modifying them if you wish
+* Outbound command throttling can be performed using a variety of different throttling mechanisms, allowing you to prevent your IRC client from flooding a server and getting disconnected
+* Because of the built-in filtering, you can configure the outbound command manager to automatically optimize the commands you send, such as splitting up excessive mode settings and substituting your regular commands with highly specialized commands available only on some IRC servers to increase the client's effeciency
+* Full user-mode and channel-mode parsing is built in; modes are delivered to you the same as any other event
+* Basic tracking faculties are in place to help you determine information about yourself and about the server you're on (like modes it supports)
+* You can easily use any type of network socket you want with vaquero's basic IRC client class, meaning SSL support is practically already in place. 
 
 === Advanced IRC features
 A large number of these features are working and complete, but they are the major reason why Vaquero is not yet fully released.
 
-    * A powerful tracking system allows you to keep a large amount of information on the users and channels you can currently see, making sure your client can retrieve this data as soon as it is needed, rather than asking the server for it -- you can even tag channels/users with your own data!
-    * Nickname history tracking is part of the advanced tracker, allowing you to look up someone by their nickname in the past and find out who they currently are (if they're still online), or just see what the user's most recent nicknames were!
-    * The tracking system is slowly being given special abilities that only work on certain types of servers, which can make it tremendously useful for bots on those networks (as an example, it currently can make use of the ircu server WHOX command, which not only tells you a lot about users, but also tells you their services account name on the server, which the tracker will store for you!)
-    * As part of the tracker, you can attach your own data (or "tag") to users, channels, and user-in-channel information for later retrieval (this data will stay intact through nickname changes and such). You can add special "life qualifiers" to the data, so that you can do things like make it automatically delete itself after some time period.
-    * An advanced command manager (the "Dispatcher") allows you to performed a limited set of query-and-listen operations (that is, you perform a query, and the dispatcher knows when it gets the reply and tells you -- not as simple as it sounds!). Currently, it only supports the WHO command, since IRC is not especially friendly to this behavior.
-    * You can enable a special form of filtering that will automatically fix outbound commands targeting nicknames. If you send out a lot of messages that get stuck in the queue a while, they'll still reach the person you sent them to, even if they changed their nickname!
+* A powerful tracking system allows you to keep a large amount of information on the users and channels you can currently see, making sure your client can retrieve this data as soon as it is needed, rather than asking the server for it -- you can even tag channels/users with your own data!
+* Nickname history tracking is part of the advanced tracker, allowing you to look up someone by their nickname in the past and find out who they currently are (if they're still online), or just see what the user's most recent nicknames were!
+* The tracking system is slowly being given special abilities that only work on certain types of servers, which can make it tremendously useful for bots on those networks (as an example, it currently can make use of the ircu server WHOX command, which not only tells you a lot about users, but also tells you their services account name on the server, which the tracker will store for you!)
+* As part of the tracker, you can attach your own data (or "tag") to users, channels, and user-in-channel information for later retrieval (this data will stay intact through nickname changes and such). You can add special "life qualifiers" to the data, so that you can do things like make it automatically delete itself after some time period.
+* An advanced command manager (the "Dispatcher") allows you to performed a limited set of query-and-listen operations (that is, you perform a query, and the dispatcher knows when it gets the reply and tells you -- not as simple as it sounds!). Currently, it only supports the WHO command, since IRC is not especially friendly to this behavior.
+* You can enable a special form of filtering that will automatically fix outbound commands targeting nicknames. If you send out a lot of messages that get stuck in the queue a while, they'll still reach the person you sent them to, even if they changed their nickname!
 
 === DCC support
 DCC support is currently fairly elementary, and is eclipsed by pircbot's own DCC support (pircbot currently supports DCC resume). Future plans for the DCC system include adding support for DCC server, passive DCC, and DCC file resume.
 
-    * A DCC manager allows you to allocate specific ports for DCC use and is safe for use by multiple IRC clients at once. It contains information on all current DCC sessions, making it easy for you to retrieve that information.
-    * Nearly all DCC operations are event-based (like the IRC parser), making it easy to handle problems with a DCC transfer if they arise.
-    * Full 'DCC SEND' file send/receive support is in place, including the ability to throttle the rate at which the file is transferred.
-    * Full 'DCC CHAT' (both inbound and outbound).
+* A DCC manager allows you to allocate specific ports for DCC use and is safe for use by multiple IRC clients at once. It contains information on all current DCC sessions, making it easy for you to retrieve that information.
+* Nearly all DCC operations are event-based (like the IRC parser), making it easy to handle problems with a DCC transfer if they arise.
+* Full 'DCC SEND' file send/receive support is in place, including the ability to throttle the rate at which the file is transferred.
+* Full 'DCC CHAT' (both inbound and outbound).
 
 === Ident support
 
@@ -69,18 +69,18 @@ A base ident server class is provided for you to create your own custom ident da
 
 Even if you're content with your current IRC library, you'll probably find something in here worth adding to your project. The goal of Vaquero is to keep you from performing tasks that are an integral part of IRC, and the classes here work to that idea.
 
-    * IRC 'rich text' support is available, allowing you to parse color/bold/reverse/etc.-formatted text and strip certain formatting, or simply make sure it is optimized to be as short as possible -- you can even transform formatted IRC text into HTML (albeit with a slight bit of CSS)!
-    * There is a class provided that encapsulates a regular String, allowing you to compare it to other strings based on a casemapping. IRC casemapping is what defines character equivalency on an IRC server. You probably already know that on IRC, the nickname "JoHn" is the same as "john", but you may not know that in most cases, "Jake{Jones}" is the same as "Jake[Jones]"! While equalsIgnoreCase() generally works okay, you can always use the casemapped string representation to make sure you're performing the most accurate comparisons possible!
-    * IRC-oriented glob-matching (that's the masks on IRC that you see containing ? and * wildcards) is in place, which can be made to use a certain server casemapping to perform highly accurate string comparisons.
-    * There's a Hostmask class (not necessarily for use in glob matching) available that's designed to hold a user's nickname, ident (or 'user login'), and hostname. That isn't too amazing in itself -- it's that this is used extensively in the IRC events, making it extremely easy to retrieve information about the user (or in some cases, a server) sending commands on IRC.
+* IRC 'rich text' support is available, allowing you to parse color/bold/reverse/etc.-formatted text and strip certain formatting, or simply make sure it is optimized to be as short as possible -- you can even transform formatted IRC text into HTML (albeit with a slight bit of CSS)!
+* There is a class provided that encapsulates a regular String, allowing you to compare it to other strings based on a casemapping. IRC casemapping is what defines character equivalency on an IRC server. You probably already know that on IRC, the nickname "JoHn" is the same as "john", but you may not know that in most cases, "Jake{Jones}" is the same as "Jake[Jones]"! While equalsIgnoreCase() generally works okay, you can always use the casemapped string representation to make sure you're performing the most accurate comparisons possible!
+* IRC-oriented glob-matching (that's the masks on IRC that you see containing ? and * wildcards) is in place, which can be made to use a certain server casemapping to perform highly accurate string comparisons.
+* There's a Hostmask class (not necessarily for use in glob matching) available that's designed to hold a user's nickname, ident (or 'user login'), and hostname. That isn't too amazing in itself -- it's that this is used extensively in the IRC events, making it extremely easy to retrieve information about the user (or in some cases, a server) sending commands on IRC.
 
 == Todo
 As you may have noticed, I have no plans to continue the project (if I do become interested again, I'd mostly likely take it up in Ruby).  However, here's a list of some things I can think of that are a starting point for restarting the project:
-    * The event system could be broken out into a separate project; this will allow focus on performance issues and introduce a proper threading model (Vaquero's current thread usage in regard to events is undefined; most of the time you'll get arbitrary threads which are being used to read data from the underlying IRC connector)
-    * Generics need to be introduced into the event system (the current method of class-casting is a bit unwieldy)
-    * The DCC manager may need to be redesigned; it is an odd mix of both blocking and asynchronous operations (example: receiving a file causes blocking while waiting for the connection, but then file completion updates are sent to a listener)
-    * The advanced tracker needs to be reviewed; some of its functionality is so specific that it may be better to break it into modular pieces
-    * There's a lot of pieces in Vaquero (the parser, tracker(s), dispatcher(s), DCC manager, etc.) -- the introduction of an "irc client" class might allow a central place for unifying all these (at the moment, there's the Basic/Advanced clients, but they are mostly pre-implemented "glue", and feel a bit too hacky to me). Setting up a factory for IRC clients might make this process a lot easier to deal with.
+* The event system could be broken out into a separate project; this will allow focus on performance issues and introduce a proper threading model (Vaquero's current thread usage in regard to events is undefined; most of the time you'll get arbitrary threads which are being used to read data from the underlying IRC connector)
+* Generics need to be introduced into the event system (the current method of class-casting is a bit unwieldy)
+* The DCC manager may need to be redesigned; it is an odd mix of both blocking and asynchronous operations (example: receiving a file causes blocking while waiting for the connection, but then file completion updates are sent to a listener)
+* The advanced tracker needs to be reviewed; some of its functionality is so specific that it may be better to break it into modular pieces
+* There's a lot of pieces in Vaquero (the parser, tracker(s), dispatcher(s), DCC manager, etc.) -- the introduction of an "irc client" class might allow a central place for unifying all these (at the moment, there's the Basic/Advanced clients, but they are mostly pre-implemented "glue", and feel a bit too hacky to me). Setting up a factory for IRC clients might make this process a lot easier to deal with.
 
 == License
 You may assume that the code is provided under the GPLv3.
