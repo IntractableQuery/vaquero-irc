@@ -156,7 +156,7 @@ public class WhoXSearchOptions {
      * Sets what is termed the 'querytype' parameter. It allows you to "tag"
      * a query so that the server replies with it in the reply (this is called
      * the 'querytype' field). This allows you to tie a reply directly back
-     * to the original query by giving it some unique name of your choosing.     * 
+     * to the original query by giving it some unique name of your choosing.     
      *
      * Note that this automatically adds the SEARCHFIELD_QUERYTYPE field flag.
      *

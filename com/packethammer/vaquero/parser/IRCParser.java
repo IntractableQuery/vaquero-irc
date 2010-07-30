@@ -6,13 +6,8 @@
  * additional parsing that is impossible to leave to the event classes (like
  * mode parsing).
  *
- * This class is very effecient in handling incoming data; all listened IRC 
- * commands and numerics are looked up using HashMap instances, so these are
- * effectively O(1) operations. It is this effeciency that really helps to allow
- * Vaquero to compete with other IRC frameworks with traditional event systems
- * that still utilize a set of if/else conditions. The potential added overhead 
- * of event casting on the part of event listeners is greatly reduce by the savings
- * made here.
+ * All event classes for events are resolved using HashMaps (this goes for
+ * regular IRC commands and numerics), so lookup is a constant-time operation.
  *
  * This parser is designed to support every RFC1459 non-optional feature. However,
  * it supports some additional features that are dominant enough to be useful or
@@ -79,9 +74,9 @@ import com.packethammer.vaquero.parser.tracking.definitions.ChannelNickPrefixMod
 
 public class IRCParser {
     /** This string is vaquero's numeric version */
-    public static final String VAQUERO_VERSION = "0.2";
+    public static final String VAQUERO_VERSION = "0.1";
     /** This is a human-friendly string indicating Vaquero's version */
-    public static final String VAQUERO_VERSIONTEXT = "Vaquero " + VAQUERO_VERSION + " (beta)";
+    public static final String VAQUERO_VERSIONTEXT = "Vaquero " + VAQUERO_VERSION + " (pre-release)";
             
     private IRCEventDistributor eventDistributor;
     private IRCServerContext serverContext;
@@ -97,7 +92,7 @@ public class IRCParser {
      * @param serverPhysicalPort The server port.
      */
     public IRCParser(String serverPhysicalAddress, int serverPhysicalPort) {
-        this.eventDistributor = new IRCEventDistributor(ParserEventRegister.REGISTER);
+        this.eventDistributor = new IRCEventDistributor();
         this.serverContext = new IRCServerContext();
         this.commandHandlers = new HashMap();
         this.loginListeners = new Vector();
@@ -322,32 +317,6 @@ public class IRCParser {
      * Hooks events that the parser needs to handle.
      */ 
     private void hookEvents() {
-        // maintain the channels listing
-        this.getEventDistributor().addDynamicEventListener(IRCJoinEvent.class, new IRCEventListener() {
-            public void onEvent(IRCEvent e) {
-                IRCJoinEvent event = (IRCJoinEvent) e;                
-                if(getServerContext().isMe(e.getSource().getNickname())) {
-                    getServerContext().getChannels().add(event.getChannel().toLowerCase());
-                }
-            }
-        });
-        this.getEventDistributor().addDynamicEventListener(IRCPartEvent.class, new IRCEventListener() {
-            public void onEvent(IRCEvent e) {
-                IRCPartEvent event = (IRCPartEvent) e;                
-                if(getServerContext().isMe(e.getSource().getNickname())) {
-                    getServerContext().getChannels().remove(event.getChannel().toLowerCase());
-                }
-            }
-        });
-        this.getEventDistributor().addDynamicEventListener(IRCKickEvent.class, new IRCEventListener() {
-            public void onEvent(IRCEvent e) {
-                IRCKickEvent event = (IRCKickEvent) e;                
-                if(getServerContext().isMe(event.getTarget())) {
-                    getServerContext().getChannels().remove(event.getChannel().toLowerCase());
-                }
-            }
-        });
-        
         // listen for proper connection and also get nickname using numerics
         this.getEventDistributor().addDynamicEventListener(IRCNumericEvent.class, new IRCEventListener() {
             public void onEvent(IRCEvent e) {
@@ -446,16 +415,58 @@ public class IRCParser {
      * @param line A line of raw IRC data.
      */
     public void parseLine(String line) {
-        IRCRawLine rawLine = IRCRawLine.parse(line);
-          
-        if(!rawLine.isSourceDefinite()) {
+        IRCRawLine rawLine = new IRCRawLine();
+                
+        // pull off the extended argument as the first task, assuming it exists
+        int beginExtendedLoc = line.indexOf(" :");
+        IRCRawParameter extendedArgument = null;
+        if(beginExtendedLoc > -1) {
+            extendedArgument = new IRCRawParameter(true, line.substring(beginExtendedLoc + 2));
+        }
+        
+        // parse the line and encapsulate it
+        StringTokenizer singleParams = null;
+        // ensure that the extended argument isn't here
+        if(extendedArgument != null) {
+             singleParams = new StringTokenizer(line.substring(0, beginExtendedLoc), " ");
+        } else {
+             singleParams = new StringTokenizer(line, " ");
+        }
+        
+        // Determine origin
+        String origin = null;
+        
+        if(line.startsWith(":")) {
+            // first arg is source of irc line
+            rawLine.setSource(Hostmask.parseHostmask(singleParams.nextToken().substring(1)));
+            rawLine.setSourceDefinite(true);
+        } else {            
             // we have to guess the origin -- first try to use server name, then use physical server address, which is definitely known
             if(this.getServerContext().isServerNameKnown())
                 rawLine.setSource(Hostmask.parseHostmask(this.getServerContext().getServerName()));
             else
                 rawLine.setSource(Hostmask.parseHostmask(this.getServerContext().getServerPhysicalAddress()));
+            
+            rawLine.setSourceDefinite(false);
         }
-
+        
+        // parse out single parameters and prepare storage array
+        IRCRawParameter[] params;
+        if(extendedArgument != null) 
+            params = new IRCRawParameter[singleParams.countTokens() + 1];
+        else
+            params = new IRCRawParameter[singleParams.countTokens()];
+        
+        int index = 0;
+        while(singleParams.hasMoreTokens()) {
+            IRCRawParameter param = new IRCRawParameter(false, singleParams.nextToken());
+            params[index++] = param;
+        }
+        
+        if(extendedArgument != null)
+            params[params.length - 1] = extendedArgument;
+        
+        rawLine.setParameters(params);
         
         generateEventFrom(rawLine);
     }
